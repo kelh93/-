@@ -49,7 +49,7 @@ class MyPromise {
         onFulfilled(this.value);
       });
       this.onRejectedCallbacks.push(() => {
-        onrejectionhandled(this.reason);
+        onRejected(this.reason);
       });
     }
   }
